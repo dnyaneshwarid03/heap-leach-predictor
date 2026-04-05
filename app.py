@@ -144,7 +144,7 @@ st.markdown("""
 def load_models():
     sX = joblib.load(os.path.join(FOLDER, "scaler_X.pkl"))
     sy = joblib.load(os.path.join(FOLDER, "scaler_y.pkl"))
-    m  = keras.models.load_model(os.path.join(FOLDER, "ann_model.keras"), compile=False)
+    m = keras.models.load_model(os.path.join(FOLDER, "ann_model.h5"), compile=False)
     return sX, sy, m
 
 @st.cache_resource
