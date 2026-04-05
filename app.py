@@ -7,7 +7,8 @@ import matplotlib.gridspec as gridspec
 from scipy.optimize import minimize
 from scipy.stats import pearsonr
 import os
-from tensorflow import keras
+import tensorflow as tf
+keras = tf.keras
 
 st.set_page_config(
     page_title="Heap Leach ML Predictor",
